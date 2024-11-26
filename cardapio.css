@@ -1,0 +1,164 @@
+/* Resetando o estilo básico para consistência entre os navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definir o estilo global */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+h1 {
+    font-size: 3rem;
+    color: #fff;
+    background-color: #ffc547;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+}
+.h2{
+    font-size: 2rem;
+    color: #1d1818;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;}
+form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px;
+}
+
+/* Estilo das seções de produtos (lanche, bebida, etc.) */
+h3 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+    color: #333;
+}
+
+/* Tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+/* Estilo das células de tabela */
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Cabeçalho das tabelas */
+th {
+    background-color: #f4f4f4;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Estilo das linhas */
+td {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Coluna para as imagens */
+td img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+/* Estilo dos campos de quantidade (select) */
+select {
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 60px;
+    text-align: center;
+}
+
+/* Estilo da área de observações */
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    height: 100px;
+    resize: vertical;
+}
+
+/* Botão de envio */
+button {
+    background-color: #FF6347;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff4500;
+}
+
+/* Estilo do checkbox e select para tornar o formulário mais agradável */
+input[type="checkbox"] {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    form {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        padding: 15px 0;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    table, select, textarea {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}

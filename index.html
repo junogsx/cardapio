@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardapio</title>
+    <link rel="stylesheet" href="cardapio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+    <h1> New Burguers</h1>
+<h2 class="h2">Cardápio</h2>
+    <form action="cardapio.php" method="post">
+        <table>
+            <h3>LANCHES</h3>
+            <tr>
+                <th>Imagem</th>
+                <th>Lanches</th>
+                <th>Quantidade</th>
+                <th>Valor</th>
+            </tr>
+            <tr>
+                <td><img src="burguer.jfif" alt="X-Burguer" class="product-img"></td>
+                <td><input type="checkbox" name="opcao1">X-Burguer</td>
+                <td><select name="quantidade1">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select></td>
+                <td>R$ 8,90</td>
+            </tr>
+            <tr>
+                <td><img src="burguer2.jfif" alt="X-Salada" class="product-img"></td>
+                <td><input type="checkbox" name="opcao2">X-Salada</td>
+                <td><select name="quantidade2">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select></td>
+                <td>R$ 8,90</td>
+            </tr>
+            <tr>
+                <td><img src="burguer3.jfif" alt="X-Bacon" class="product-img"></td>
+                <td><input type="checkbox" name="opcao3">X-Bacon</td>
+                <td><select name="quantidade3">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select></td>
+                <td>R$ 8,90</td>
+            </tr>
+        </table>
+
+
+        <table>
+            <h3>BEBIDAS</h3>
+            <tr>
+                <th>Imagem</th>
+                <th>Bebidas</th>
+                <th>Quantidade</th>
+                <th>Valor</th>
+            </tr>
+            <tr>
+                <td><img src="pepsi.jfif" alt="Coca-Cola 2L" class="product-img"></td>
+                <td><input type="checkbox" name="opcao4">Coca-Cola 2L</td>
+                <td><select name="quantidade4">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select></td>
+                <td>R$ 9,00</td>
+            </tr>
+            <tr>
+                <td><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMHBhETERAVFRUWFxkYEhAYEhYVEBYQFxgXFhUSFhYYHSggGRslGxUWITEhJSorLi4uFx8/ODMvNygtLisBCgoKDg0OGhAQGy0mHyY3Ky0tLS8tLy0tKy0tLS0tKy0tLS0tLS0tLSstLS0tLS0tLS0tLy0tLS0tKy0uLS0tLf/AABEIAKgBLAMBEQACEQEDEQH/xAAcAAEAAwADAQEAAAAAAAAAAAAABQYHAwQIAgH/xAA9EAACAQIEAgYHBQcFAQAAAAAAAQIDEQQFEiEGMQcTQVFxoRQiMmGBkbEjNnKy4RUzQmKC0fBSk8HC4ib/xAAbAQEAAwEBAQEAAAAAAAAAAAAAAwQFAgEGB//EADIRAQACAgEDAwICCAcAAAAAAAABAgMRBBIhMQUzQSJRYaETFTJCcYGx8AYUUmKRktH/2gAMAwEAAhEDEQA/ANxAAAAAAAAAAAAAAAAAAADjr1VRoyk+UU2/BK7D2tZtMRDP8R0rUqVSywtV+9zgn8tyK2XU+H0Ef4ey673j809wlxjS4mqTjCnOEoJNqWlpptrZp+7zR3W0WZ3O9OvxIibTExP2WY6Z4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOtmNN18DVglvKEore27TXP4nNpmI7OqX6LRbXiYYrV4ExWKldTjBOzWpq/LtMi3LmZ7Vlt2/xbFo1GGf+0f+LZ0X8PVsmzCvKq004KKkmrX1Xv7+X+XLfDzzkmY1rShyvWI51IpFOnU/fbR0XlEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHQx1fVPq4/1P3dxS5Oad/o6+flWzZJ30VcM6SUbFa1IiNIbUiI06lKXoeKuuT9pdhDjvOHJuPCClv0V9x4TtKaqQTRtVtFo3DVrMTG4fZ09AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHRzvMo5RldStPlFbLtcntGK8WR5b9FZs5tOo2zl9J1LA3c8LVc5bx9aNnfe77v1MzF9MzM95c8biXt3jy5o9JUKsbrCzt+ONyO3IpvUrc+lZfvH9/ydKt0n4eNZRqYesru11ol5XEY4yd4lVy+kZY+y08McYUcxzV4eKnF2vFySSbtdW37V9C7xYtT6ZR4qWxz0yuReTgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADO+lDGvEYvD4WL2b1zXkvLV8ylyZ6rRRHbvaIZ9nWBjVzaEYrlFfD3blDk5IpvTe4mOK12m8HlX2VtjAyciNraC4jyjqlq7nfkX+Hytzp7rcakw9d5dmFCtTk73W7d/5o+f1N2ltxEsDl4+m23oDA4lYzBwqR5TipL4q9i9E7QOc9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADGs+xXp/GOIk27QemLTtstufwM207yWsYI6siNyqh6bmE5tt72V99lsjD52bUPoqR01iF3weCUFyXz/Q+eyZN/Ja2kdxFlvXYOWyW3ffysWOJnit47uqWZpipOnh2tTvG9lta63R9hx77jSjzse423Ho0x/p3DEN/YbXwdpL8z+RpYp3Vj18LWSugAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH49kJHnzHYnRmWIbe7lK2/vfcZNp1Eym4cbul+EaDqQVj531C3duzK70KM4dhizTaObQ6mbavR3tYkw1iLd3sWY7xBqo4uST7d23ZH2XC+qsIuVO6Nd6FajlklRN3to+dpL/g1cM9mFVoxO6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHyA888YYf0TNaqsrqTvt3O23cZmSveYSca3TdIcK43ZbX+NpHz/Nx6lu73C9UcXelzkvddGRaNSjmENnWLfVv2n8UWMFdy6hl2c1Ovxtmlz5PkfT8Wuqq/Lvqum2dEWD9G4flK1tUkl4RX/o1cMdmNVeiZ0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYrx/hliuLq0W2kknt2tpGXntMXlQvzLYskxEIPKKjwcnolSVna1Sai34LuM7Lxoy+ZWY9azTHiqw0M+qt2vhOV7qo33be1z38mVp9Oxx+9+bn9b5/8Aa4swxk6tCTcsO7K9oz9bwSb3Z1XgUr3iXX63zx/p/v8Amp1TArE1deqSt2K1vNGlinprpHl9Uy5I71hvfAdPquFqC9z/ADM1OPO6RKTj5JvSLSsBMmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMd4y++lf8ADH6GTyPcli8n3ZV/J8o/aE69Scoxp0lqnOWrQl27Q9aT5JRTV3LntZx48fVufiGh6PwcXJy6yxMx2iKx23M/j8RHmXfwtOlTrqKnSd3ZynRo6FaKk7OnNqyTV25t3aSTZ1Fa71/XT6fmehxaI/y+GtYiNzP1Wt51Hadef6d33UdKpCMlGEt5arUqkbQgr1JNdY4pKF2mufddbeTWvmHzfqfpmThZIrkiO8bjUTrX4951pXsP+6ZxTwyfhunBH3ZoeD+rNTje3DT4ftR/NOlhaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMe4zX/2df8ADH6IyeR7ksTk+7Z1uH8fhaeS4rDV20673mpU04uLvF2nOLfKL2utj3FekY5rb5bvovIx4IrkjJWLRMzq2438fb7ItYGNK0IylUV3KFWFNSpvUoqUfVk9/VW3ZvzumouiI+l+gYfUqcis56TXXiY6vGt9968d1pyrFYXJslr0pT6ypVVpyTpKEUvZXtttJ3bst+4sVvjpSY33l8r6n6hh5d4tOSsViJjW9zO/Px8qHQX2TKtXxPw3Tgj7s0PB/mZqcb24anD9qE6WFoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAx/jP75Vvwr6IyeR7ksTk+7ZF5fRhVwj6ydSFNdd12mN1NqMZRk3yT9mKUlzfq7tuPNIia6n8XuOImvedR33+LmwWAwsI7VazUo+s00tuaenTurbWe95dyOejH95dxTHrzLkxOEwlPDyeufsySfOCqNPTyint299zzpxRHkmuOFboL7JnlUHw3Hgn7s0PB/mZqcb24anD9qE6WFoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAyDjBa+NK6X+mP0Rk8j3JYnJ92ynOCq5ioSkopzScnb1U3vLdpbeJX1udIaxudJvKssThJKomm5esoxasm0mpa+1bj9FH3T0xR3h183w8cHJxU9Ttd7JWvuuTZzNYiXF6dKPw7bwzfYSVns5jw3Dgn7s0PB/mZq8b24avD9qE6TrQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABkXEU41ON8S07WUYt/zJJGbk1OS0y4x8fHkyT1V2gcHlMcdi5ylG6cnbnyv7jF5PItTxLXj0vi670j81hwfDOHi/3cP9yaMrJz83xaf+Hk+mcSP3Pzl8ZpkFKOHeiC5dk5yJOPzMsz9U/k9j03iT+5/VVMRTeGy+STaavtf4n0uCIt5VuVwePSv00hs3ANVVeF6NuzUn46m/o0amKIisaUqVisahYiR0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYdmVfrM+xcu+TuZWSe9pT8OPrSfDNFOkrv4nz3Ojv2bcytdGO/Mwr9nFp7OHMIXoO8uwl4/7UFZZjn1o6k/I+24nesIOVH0NR6Ka/W8PyXdJP5xX9jTxT2Y0LsSvQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH5J2izyRgWNq6czr++RlXnys8KPqWnhWF8OjG5cbatpWaEVq/Q+fzxMS5mezr4/SqD27O4Yd9UO6bZLxJWVOs9u0+34U7o45MfQ07obnryir4w+kjSw+GF8tDJnoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD5qfu34M8nwPPWePqs0mt92zKyLXB/aXbhKywyu7fT5mPytz4al1msu/wAzBzRO3G0fmlWMcPL1vM4xVnqjsmox3iiV8U+dr+B9lwbarpzyP2GrdC6tldb+j/sa+HwwPlo5MAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPySvESPPHE605xK/ZJ/UycsLXC/aW7hvHKlhluvmYXJidtW0d0zUzOn26fkjKyY7z4Iqjc0zGMaDcbfA9w4rTPdJEMq4lxvW4ja3M+q4eKa1Rcm30abF0KPrMiqS75RXyT/ua+HwwfmWjEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYT0hZesNndZOMneT0QivWlq3il8GZfI6q27Tr+KzxZrG4lSMtzCdLNXTjqjLdKm9nqteMWr235bd6Pb4a5Kb7fxT1y3x2/D7T5hy/t+pWldPYqzxKR2mE/wDmLT4fOacQ1KmCcU+zdrsv/j+R1x+DSL9UvMvLtFdV8oKhTlKj1kqcnF7Kae1/B7sv2mInpiY39laOvp6rRMx93pTokwHoPBtNv+OUp/D2V+XzJsEfQpz5XMmeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFU434V/b9BSpy0Vo+zL+GXcpf3KufD+kjWndLdM7hnGK6NMXicYq1akp1Vazpzioeryb9aMm/kV8WDJir0U8J8mbrncq7nnRxmizGc6GDk4Tblp10lpm95JLX7N7td17dhbinVH1Qjrk6Xcy/o4xay7RWwVRyk25y+zupclplr5Jd67XscWrff09jq+ZS2D6PMXjK1GnWpuGHpu6ilFVGttm07fHyIK8Sa2m/wAyly8m2SsVnWobNl9L0bCwhGCjGKUYxXJRSskXKbiFWdO4iV4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPywCwDSAsAsB+gAAAAAAAAAAAAAAAAAD/9k=" alt="Guaraná" class="product-img"></td>
+                <td><input type="checkbox" name="opcao5">Guaraná 2L</td>
+                <td><select name="quantidade5">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select></td>
+                <td>R$ 9,00</td>
+            </tr>
+            <tr>
+                <td><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMPDxARDhAPFhIVFxcVFRcWEBUVFRMYGRUZGBUdFRMYHSogGBsxGxMVITEhJykuLi4wFyA5ODMtNzQtLisBCgoKDg0OGhAQGC0dHSYtNzAuLy83MTItLS8wLSstKyswLTUvKy0wLS8tLi8wLS4vKy0rKystLysrMi0rLS0tLf/AABEIAOEA4QMBEQACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABwMEBQYIAgH/xABHEAACAQMCAgYGAwwJBQEAAAAAAQIDBBESIQUxBgcTIkFRMmFxgZGSCBSxIzNCUmKCoaKywdHSFhc0Q1TCw9PwJCVyo7MV/8QAGwEBAQADAQEBAAAAAAAAAAAAAAECAwQFBgf/xAA2EQEAAgECAwQHBwQDAQAAAAAAAQIRAwQhMUEFElFhExQicYGRoQZCYrHR4fAWMlLBFTRTI//aAAwDAQACEQMRAD8AnEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKdxU0wlLyTfwWSSyrGZiEFcS6Z30nq+u1IptPEVTjGOZRTx3c4w3zbPPrr3nnL7HW7K22nXEU/NrVPrH4qnhX9T306L+2B0xeXi22mn3sYdE9FeIyurG1uKmNdSlCcsLC1OPewvBZN9ZzGXlatIpeax0ZUrWAAAAAAAAAAAAAAAAAAAAAAAAAAAA8Vk3GSSTbXi8L44ePgCEUy6u6lSmoN1o6JzjGUZw70M7OTa39T228Dhjb45Pobdt3vnMRx97FXPVTohOq6tSWlOb+603sll7afI2dycOSN/xzwTFwe07C3o0cJdnCMNnlYisJ5wt8LPLxOmIxDy7271pmV4ViAAAAAAAAAAAAAAAAAAAAAAAAAAAA+TlhNgU7ekoQjFZ2WNzEfZwymvPblkY4D7R9FZ58n7VszKB7AAAAAAAAAAAAAAAAAAAAAAAAAAAAApTeWl5bv938fgSR6ZFfAPkXiWPP7fH/ntLCKpQAAAAAAAAAAAAAAAAAAAAAAAAAADxVnpWfHwXmyTI8U18fExV6A+geZrK9fgMj3TnlZ+JlCPRQAAAAAAAAAAAAAAAAAAAAAAAAAFtCet6ly5L1+bMJnKqyKPgDIACm3pefDx/iTkLgzQAAAAAAAAAAAAAAAAAAAAAAAANX6x+lMeFWE7hx1TlKNOENelzcn3sSw8NQU3nHgJGsdDOtilxK5p2tKyrQk4uUpdpBwpxit2+TxnCW3Nox7q5XnSrrbs+HXMrWpSuak4qLk6cabjFyWpLMprfDT95ZieiMP/AF8WH+Gv/ko/7hjiy5P6+LD/AA1/8lH/AHBiw+f18WPha33y0l/qDFh4n1428sqFjcPy1VKaXvw2XEjdurvpZHi1m6ujs6lOcqdSnq1aWt4Ylhak4OLzjnkyRtIAAAAAAAAAAAAAAAAAAAAAAABAH0j+Lud1aWkW9NOm6st9nKpLTHK81Gm/nAodSVsqVG7u57ZlGmnj0Ywjrqb+Xeh8pRGPGuISurmvcTzmrOU93nGptpexLC9xBYgAPoF9bz2TCpX6juJ9jxOVHPcuqL286tHvLH5jqfAInwAAAAAAAAAAAAAAAAAAAAAAAA5W666znx69Tbaj2UY+pdhB4XvbfvA2Dg1X6v0Wq1Ip5nGtyzznV7HPwx8AImAAAAF5Z+j7wre+repov+HVM403Ch7qkHTx+uQdNlQAAAAAAAAAAAAAAAAAAAAAAAc79bfRN1eK3NeNZLtND0uD7uKUI887+jnl4mi+4ilsYe1suxdTd6cXreI96nG6px4I+G991tMkpaV2bbruot85xvjkY+t08HVP2Y3fS1Z+f6NE/ozV/Ho/NL+Uet6bD+md7+H5/s+S6NVV+HR+aX8o9c00/prefh+f7C6NVfx6PzS/lHremf0zvfw/P9nqPRir4zo/GT/yj1ujOPsxu+s1j4z+i+tuj0oxcdcMvx0vb9JPW6+DZH2X1+upX6tx6A8B/wCqtYuonpr0qv3vnompY9LzS3LXcRa0REObedhW22lOpbUiceX7uhzpeCAAAAAAAAAAAAAAAAAAAAAAAId6y/7ZU/N/ZR524/vl919n/wDrR8WrWfEuyhKHZwmm5elnbVFReEvHC5mqL44YetuNj6a8X7814dPKcr7+kff1fV6XPOM7cmm9lnVvjPkkseefpuOcOT/h/Z7vpZ/nx5PHDekKt6cIfVaM3Ft5lhZy5eUdnieM5xiMdlgxrq92MYyu57KnWvNvSzGccPdjz/kyuKfSmKSSs6GVp32x3Ullx04beFl+SSxzzl6f8MNM9i2nnrW/nxU7jpBGpGUXaW6Uotd3VFpvTlp+X3Knt+S93kk6meHdbtPsu2naLRrWnE9ePj+s/Ng0a3sS23q//ttD/wAkbtH++Hg9uf8AWsms9J+fgAAAAAAAAAAAAAAAAAAAAAACLOmtnTneXVa5lNUKKg56fTqSlFKEIN7JvfL8EvecOtWO/Np5Q+t7L3GpTb00tGM3tM4zyiOsy0bjttCjcTp08YSjlKfaKEnBOUVUwtWG2s4Oe8RE4h9LsNa+roRe/Pj0xmM8Jx0WCMJdky81CIyHBOEVryo6dCOcbyk3iEF5zl4faZUpN5xDk3m+0tpTvak+6Os+5m3wWzhF6q9xUajUkp01CMKnZpufZxkm3DMXHW2k5clLfG30dIjnLyv+S3trezp1rxiMTnMZ5Z4xx64iOXPD7S4Ja3lFy4fVqxrwWZUK8o6p+H3OUUstvC9rXLJlGnW8exPHwllftHd7TUxu6RNJ+9Xoz/Rzg6tbu0TzqcsZcvvuFmc4x8IJ91P8LKZtpSK2h5O939tzoak/d/Ljwj39Z8EpHY+WAAAAAAAAAAAAAAAAAAAAAAAEd9MaNOV1pr57CGu8rpc5KEIU6cV7XlY8cs5dWI73Hlzl9B2be9dGbaf984pX4zMzLAXlhQtlC8u/q05VHGlThCnijGS2q1JUklqUVtoxu1vu9tVq1r7Vv55vQ0NxuNeJ22hNoiMzMzPteVc9M+P+le24DRVeOKEZVbmTnSpTT0W1un3qtSCxiTXKD2Tkl4FjTrnlz6eEMNTtDXnSx35itIxNo52t0rE+XWescWMgre5v6lCysqcoSj2dGWuShTUc660o4ev1Za5Jc2a4itr92tf54uu1txobSurra0xMTmY6znlXPTz/AGeull/C2pPhnD86IJu4mt5VJY7yk14ctXhyWyWBrWisejp8U7N0Lbi/ru6xmf7InlHu/wBfNi+I3cajqRtFVm6iS+9tdnRhjRThBNvC0xcpeOletvC0xM+z/I8HfttC2nFbbjFYjz52nnaZ/KF50ZtHSoVbx4U3mjbt8oycW6tV+qFNSefb44M9KOHe+X6uftTcRfVrtuke1bz/AMa/GWZ6LUqq4jQlXhWjqaVPtW9bhGKUfSeeTWfXJmzTz6SMuHfW0fUbV05icc8cszP8+CXDufHgAAAAAAAAAAAAAAAAAAAAAACM+n3EoULquqlJz7S3pqKziOqNaU1r33hmO6XPGPE5Na0Rac+D6Xsna319Gs0t3cWnPjiYiOHmwC41a11w6VVVqlSglGrDRmCbmnOpJreXJy0rm8Z8np79Ld3PGYehOy3Oh6elJrWtuU54+VY8PBkr7pRYv69VhUuJVq2mmsRcXKmlHu05NYpwfeTb727eM4NltbT9qYzlx6PZe9/+VJiIrHHx4+M+M+HT6vnRm6dCwveIzUe0adOkku7TjHEaUIx8I65JY8dK8RpT3aTqdTtHSi+70tnXPdjjPjMzxmZ+C3t7xUnQtrGbk6bVW9qR53FXK00u0fpKVR6MZw9S9ZjE4xWvx82y+lN6319xGM8NOJ+7H+WPKOKvRo0rJxsqNSca1N0q1xWgvvktWI0W1uotzhhLz3XNliIrPcieMc/0Yampq7mvrOpETWc1pWekdbfDjmV1WjGjLsIQUqHD6UXLbe4uJuLpw8sOppk154M+U92OUfWXPXOpHpbT7erPD8NY5z8uEeWVThEJf/q0ITmpSpQSk/xpqUnWljwbqzqL80Vz6SIlda1Y2F7RGM2+nSPhGPmk063zgAAAAAAAAAAAAAAAAAAAAAAAiLrIv3G6qQ7OhLTjTKdJTlHVCOUtXdazvunzOHXt7WMPsOw9tFtGLd60Z5xE4iePz+rB8H6bXVvUi5VNdJPvU9EIprx0uKWl+Xh6jXXWtWeeYeluuw9trUmKx3bdJzP1XHFOI1uILXW4csS3p1aMZKpGOWlmTyqi25NLltgWtbUjjX5ObQ0NLYz3abjjHOLcp/RV4HxCdC0q2d5YXFShOTaxFxkm2njdfjRTTT2fmWlprWa2rMw1b3R09bcV3Ohr1rePFj7bjDtq1CpC0lStqc1PRlt1G1JKU6sl35YcscksPGN2YReaTE4xDqts67jTvWdWL6kxjPhy4REco8TiXSjtLuNelQjCnGrGs4asyrSg1h1J+eFsltHL57ltq5tmIZ7fsnubedO982mvdielYnwj8/FkZdP5aqjjaUUp1YVUm8406c6tt5vQsS/BwsLY2esTx4OWPs9GK97VnhWY+f8Ary6r/oVxWVxfxnOMNU5ybaWMKWHhLy7sVv6/Ey0r5u5e1djXQ2uK2nEY+nVLh2vkgAAAAAAAAAAAAAAAAAAAAAABzl1rdJ5UuMXlGVKMowdPDUnGW9GnLfmnu2ab6EWnOXs7Dtm+0p3O7Fo+T7LhDXDFxFzWns1UdNReVmWnGrOHzzk0TtbdJexT7UU+9pT8J/ZrdLpfGKSU7uONkovCS5+E/Mnq2p0sW7f2N5zbRmfhVUn00zj7ve7csye3s75PV9X/ACSO2uzv/H6VUp9LYyjplUuXHbuveO3Lu68eL+I9W1J4TLOvbuwpbvV05ifdCl/SOj5Vvkj/ADiNrbxhsn7Tbb/C30/V7jx2Di5KFTHrUV+9mcbWfFqv9qNL7unPzhufVdxN1ryi1DTicV6WrKcsPwXmbKaEUmJy8jfdtX3VJp3IrHzdAHQ8QAAAAAAAAAAAAAAAAAAAAAAAcvde1r2fHK8l/eQpT/8AWof6YG6W9JVeiu/haTfvhKTX6YFEEkAAAAzKji39uPsyBInUnb67mHtT+XM/8jMZ5q6GMkAAAAAAAAAAAAAAAAAAAAAAAHO/0j7Vx4la1dtM7dR98Ks2/wBFSIGd6CRVXo32b3Tp3VNr2yqvH636SiCCAUfCABm7vajBev7EVUt9Q9rmbk16MW16srGf1se8x6ibSoAAAAAAAAAAAAAAAAAAAAAAAIQ+kvb93htVLk68G/b2bj9kgKfUnV18NrU3yjXl8JU4fvyBCVWm4ycXzTaftTwwPAAD1TWZL2oozHEX3Ka9rCp06iKGKFWfqiv4/smKJVKAAAAAAAAAAAAAAAAAAAAAAACG/pKVUrWwh4urOS9kYJP9tAa/1CSei/TzpUqDXllqrnHuUf0ARTxGsqlarOPKU5SXscm19oFuUfCD3Sfej7UBk76eVT9SA6E6kJr6nVS84v7f+e8kLKSSoAAAAAAAAAAAAAAAAAAAAAAAOffpI8RU72zt1/dUpVHvsnVnjHtxRT96AvuqKj9X4RWuHznOpU/NpwUV+mMyiESAB8AFF9WllIgm/qH4mszpN+lHb2rf7MmPVeiZjJAAAAAAAAAAAAAAAAAAAAAAAByv13VnPj14pPaCoxj6l2EJfbJv3gbrWxadFVjHetl8biW//wBiiECAAAAXso90CQ+pi70X1FeclH46v4mMsnSRkxAAAAAAAAAAAAAAAAAAAAAAAHKvXXFrj19lPfsWvWvq9PkBsPTvjVKnwS0stS7adG2ehbuMYwi8t+HormBEwAoEH2Cy0gMrcrTTXm3sVW09Us/+40Evx4/ajGSHUZUAAAAAAAAAAAAAAAAAAAAAAAHOP0iuHunxSjWx3a1CO/5UJSUl8rh8QIwuriVWbnN5eEvdGKjFfBJe4CiAAAXNjR1Sz4ICpdVdb25JbexBW69TFLXxW3Xk9XyrP7iSRydQlQAAAAAAAAAAAAAAAAAAAAAAARf9IDgDueGxuaccztZ6ns2+yniNTHvVOT9UWBzaUCAUALutLRHs1z5yf7gq1bCJj+jpwd1Lm4u5LuUo9nF/lz549kc/MQT8AAAAAAAAAAAAAAAAAAAAAAAAU69GNSEoVIqUJJxlFrKlFrDTXisMDnrpn1J3dKvKXCoxrUJPMYOrGFSlzeG6jSlFbJPOfNeIGO4T1J8UrS+7woW8c7upWjN48XGNLVn2NoDJdNepapZWcK1lUq3NSDfbxUEm4vlKlTWXs85WW909sMCL7Th1arU0UaFac08aYUpSlny0pZyBK9l1F3Nazp1Z3MKV1LMpUZw1QWX3U6kXlPHPZ8wZUKPUdfSnGE52cIfhVFUnNpeOmGhNv2tGEROeMujU1dOa92lceab+iXRujwu0p2tsnpjvKT9KpN+lKXreF7EkjNzsyAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf/Z" alt="Coca-cola 2L" class="product-img"></td>
+                <td><input type="checkbox" name="opcao6">Coca-cola 2L</td>
+                <td><select name="quantidade6">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select></td>
+                <td>R$ 9,00</td>
+            </tr>
+        </table>
+
+
+        <table>
+            <h3>PORÇÕES</h3>
+            <tr>
+                <th>Imagem</th>
+                <th>Porção</th>
+                <th>Quantidade</th>
+                <th>Valor</th>
+            </tr>
+            <tr>
+                <td><img src="por3.jfif" alt="Iscas de Peixe" class="product-img"></td>
+                <td><input type="checkbox" name="opcao7">Iscas de Peixe</td>
+                <td><select name="quantidade7">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select></td>
+                <td>R$ 20,00</td>
+            </tr>
+            <tr>
+                <td><img src="por2.jfif" alt="Batata Frita" class="product-img"></td>
+                <td><input type="checkbox" name="opcao8">Batata Frita</td>
+                <td><select name="quantidade8">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select></td>
+                <td>R$ 12,00</td>
+            </tr>
+            <tr>
+                <td><img src="por1.jfif" alt="Picanha" class="product-img"></td>
+                <td><input type="checkbox" name="opcao9">Picanha</td>
+                <td><select name="quantidade9">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select></td>
+                <td>R$ 25,00</td>
+            </tr>
+        </table>
+
+
+        <table>
+            <h3>DOCES</h3>
+            <tr>
+                <th>Imagem</th>
+                <th>Doce</th>
+                <th>Quantidade</th>
+                <th>Valor</th>
+            </tr>
+            <tr>
+                <td><img src="doce1.jfif" alt="Brigadeiro" class="product-img"></td>
+                <td><input type="checkbox" name="opcao10">Macaroon</td>
+                <td><select name="quantidade10">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select></td>
+                <td>R$ 9,00</td>
+            </tr>
+            <tr>
+                <td><img src="doce2.jfif" alt="Beijinho" class="product-img"></td>
+                <td><input type="checkbox" name="opcao11">Brigadeiro</td>
+                <td><select name="quantidade11">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select></td>
+                <td>R$ 9,00</td>
+            </tr>
+            <tr>
+                <td><img src="doce3.jfif" alt="Trufas" class="product-img"></td>
+                <td><input type="checkbox" name="opcao12">Beijinho</td>
+                <td><select name="quantidade12">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select></td>
+                <td>R$ 6,00</td>
+            </tr>
+        </table>
+
+
+        <label><strong>Observações: </strong></label><br>
+        <textarea name="observacoes"></textarea>
+
+        <br><br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+       
